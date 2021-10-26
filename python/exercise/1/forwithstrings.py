@@ -9,7 +9,7 @@ basicString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
 
 splitText = basicString.split()
 firstLetters = ""
-print(splitText)
+#print(splitText)
 for word in splitText:
     #print(word)
     for i in word:
