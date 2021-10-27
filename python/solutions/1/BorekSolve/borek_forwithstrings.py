@@ -7,16 +7,19 @@ basicString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
 
 # implement split on string above / or use if statement to check for 'whitespace' the print only element that is after 'whitespace'
 
-splitText = basicString.split()
-firstLetters = ""
-#print(splitText)
-for word in splitText:
-    #print(word)
-    for i in word:
-        #print(i)
-        if i == word[0]:
-            print(i, end= "")
 
+#firstLetters = ""
+#print(splitText)
+def splitFunction(basicString):
+    for word in basicString.split():
+    #print(word)
+        for i in word:
+        #print(i)
+            if i == word[0]:
+                print(i, end= "")
+
+
+#splitFunction(basicString)
 # TODOimplement for loop that iterates over 'splitText' -> print outupu
 
 # to print it on one line search for 'print' and its usage, arguments, formating...
