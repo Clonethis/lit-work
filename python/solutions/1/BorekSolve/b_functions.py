@@ -3,9 +3,14 @@
 from borek_forwithstrings import splitFunction
 # variables that you will provide to splitFunction
 basicString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-#splitArray= [' ',', ','u',]
+splitArray= [' ',', ','u',]
 # code how should you call 'splitFunction' that you created
-splitFunction(basicString) #pak jeste zkusim ten array 
+
+
+x = basicString.split(splitArray[1]) #zatim takhle 
+for i in x:
+    print(i[0], end='')
+#splitFunction(basicString) #pak jeste zkusim ten array 
 
 #TODO iterate over 'splitArray' to show how 'splitFunction' could be used, as a value for 'splitFunction' use 'basicString'
 #look at characteristics of arrays
