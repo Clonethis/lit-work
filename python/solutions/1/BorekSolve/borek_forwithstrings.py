@@ -23,7 +23,7 @@ def splitFunction(basicString):
 def splitFunction2(basicString,splitArray):
     for x in splitArray:
         for i in basicString.split(x):
-            print(i[0], end = '')
+            print(i[0], end = '\n')
 
 #splitFunction(basicString)
 # TODOimplement for loop that iterates over 'splitText' -> print outupu
