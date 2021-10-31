@@ -10,6 +10,7 @@ basicString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
 
 #firstLetters = ""
 #print(splitText)
+"""
 def splitFunction(basicString):
     for word in basicString.split():
     #print(word)
@@ -17,7 +18,12 @@ def splitFunction(basicString):
         #print(i)
             if i == word[0]:
                 print(i, end= "")
+"""
 
+def splitFunction2(basicString,splitArray):
+    for x in splitArray:
+        for i in basicString.split(x):
+            print(i[0], end = '')
 
 #splitFunction(basicString)
 # TODOimplement for loop that iterates over 'splitText' -> print outupu
