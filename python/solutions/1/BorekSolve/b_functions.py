@@ -6,10 +6,9 @@ basicString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
 splitArray= [' ',', ','u',]
 # code how should you call 'splitFunction' that you created
 
-
-x = basicString.split(splitArray[1]) #zatim takhle 
-for i in x:
-    print(i[0], end='')
+for x in splitArray:
+    for i in basicString.split(x):
+        print(i[0], end = '')
 #splitFunction(basicString) #pak jeste zkusim ten array 
 
 #TODO iterate over 'splitArray' to show how 'splitFunction' could be used, as a value for 'splitFunction' use 'basicString'
