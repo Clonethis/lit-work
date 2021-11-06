@@ -21,15 +21,15 @@ else nic
 
 """
 now,previous = pt.position()
-print(type(now.x))
 print('pt.size:',pt.size())
 while 1:
-    if now.x == 0:
-        break
+
     time.sleep(0.2)
     now = pt.position()
     if now != previous:
         previous = now  
         print(now)
+    elif now.x == 0:
+        break
     else:
         print('',end = '')
