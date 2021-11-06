@@ -8,3 +8,28 @@
 import pyautogui as pt
 # docs: https://docs.python.org/3/library/time.html
 import time 
+
+"""
+a,b = pt.position()
+def(mouse_moves(a,b)):
+    for a != b:
+
+if mouse 
+    for  
+        print(pt.position())
+else nic 
+
+"""
+now,previous = pt.position()
+print(type(now.x))
+print('pt.size:',pt.size())
+while 1:
+    if now.x == 0:
+        break
+    time.sleep(0.2)
+    now = pt.position()
+    if now != previous:
+        previous = now  
+        print(now)
+    else:
+        print('',end = '')
