@@ -5,31 +5,19 @@
 # todo 3 -> when mouse touches left border of the screen (x=0) stop program
 
 # docs: https://pyautogui.readthedocs.io/en/latest/mouse.html#mouse-clicks
-import pyautogui as pt
+
 # docs: https://docs.python.org/3/library/time.html
+
+
+import pyautogui as pt 
 import time 
 
-"""
 a,b = pt.position()
-def(mouse_moves(a,b)):
-    for a != b:
-
-if mouse 
-    for  
-        print(pt.position())
-else nic 
-
-"""
-now,previous = pt.position()
-print('pt.size:',pt.size())
 while 1:
-
-    time.sleep(0.2)
-    now = pt.position()
-    if now != previous:
-        previous = now  
-        print(now)
-    elif now.x == 0:
+    a = pt.position()
+    if a != b: 
+        b = pt.position()
+        print(b)
+        time.sleep(0.2)
+    elif a.x == 0:
         break
-    else:
-        print('',end = '')
