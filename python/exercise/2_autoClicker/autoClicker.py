@@ -13,6 +13,8 @@ import pyautogui as pt
 import time 
 
 a,b = pt.position()
+print("jsem a",str(a))
+print("jsem b",str(b))
 while 1:
     a = pt.position()
     if a != b: 
