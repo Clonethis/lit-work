@@ -12,14 +12,14 @@
 import pyautogui as pt 
 import time 
 
-a,b = pt.position()
-print("jsem a",str(a))
-print("jsem b",str(b))
-while 1:
+b = pt.position()
+
+
+print("jsem b",type(b))
+while b.x != 0:
     a = pt.position()
     if a != b: 
-        b = pt.position()
+        b = a
         print(b)
         time.sleep(0.2)
-    elif a.x == 0:
-        break
+    
