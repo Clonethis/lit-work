@@ -5,6 +5,21 @@
 # todo 3 -> when mouse touches left border of the screen (x=0) stop program
 
 # docs: https://pyautogui.readthedocs.io/en/latest/mouse.html#mouse-clicks
-import pyautogui as pt
+
 # docs: https://docs.python.org/3/library/time.html
+
+
+import pyautogui as pt 
 import time 
+
+b = pt.position()
+
+
+print("jsem b",type(b))
+while b.x != 0:
+    a = pt.position()
+    if a != b: 
+        b = a
+        print(b)
+        time.sleep(0.2)
+    
