@@ -10,23 +10,18 @@ import pyautogui as pt
 import time 
 screenSize = pt.size()
 print("Screen size: ",screenSize)
-previousLocation = pt.position()    
-for i in range(200):
-    
-    currentPos = pt.position()3
+previousLocation = pt.position()
+for i in range(0,200):
+    currentPos = pt.position()
     if previousLocation != currentPos:
-        print("CurrentPos: ",currentPos)
-        previousLocation = currentPos
-    time.sleep(0.01)
-    pt.keyDown('alt')
-    pt.press('tab')
-    pt.press('tab')
-    pt.press('tab')     
-    pt.keyUp('alt')
-    
+        pt.moveTo(screenSize.width/2,screenSize.height/2)
+        print("CurrentPos: %d,iterator: %d",currentPos,i)
+        previousLocation=currentPos
+    time.sleep(0.05)
     if(currentPos.x == 0):
         break
     
+
 
 
 
