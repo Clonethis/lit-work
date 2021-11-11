@@ -1,0 +1,1 @@
+[Point(x=860, y=736), Point(x=820, y=731), Point(x=542, y=211), Point(x=646, y=236), Point(x=1795, y=55)]
