@@ -18,8 +18,10 @@ import pyautogui as pt
 userDecider = input("Would you like to 'create' new or 'load' old data? Press 'c' or 'l'")
 if userDecider == 'c':
     demo_file = open('values.txt','w')
+    print('you have overwritten old file')
 elif userDecider == 'l':
     demo_file = open('values.txt','a')
+    print('you will now write in the previous file')
 
 mousePositions = []
 for i in range(20):
