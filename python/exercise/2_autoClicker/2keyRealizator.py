@@ -14,14 +14,13 @@
 # -> also provide error if user creates something wrong
 #cmd:  'Would you like to 'create' new or 'load' old data? Press 'c' or 'l''
 import pyautogui as pt
-"""
+
 userDecider = input("Would you like to 'create' new or 'load' old data? Press 'c' or 'l'")
 if userDecider == 'c':
     demo_file = open('values.txt','w')
-elif userDecider
+elif userDecider == 'l':
+    demo_file = open('values.txt','a')
 
-"""
-demo_file = open('values.txt','w')
 mousePositions = []
 for i in range(20):
     list_operator = input("neco napus pyco ")
@@ -39,5 +38,7 @@ for i in range(20):
         demo_file.close()
         print('data is now stored in values.txt; ending program')
         break
+    else:
+        print('ne')
         
 
