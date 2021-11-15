@@ -3,6 +3,7 @@
 #pop function for removing last element: https://www.geeksforgeeks.org/python-list-pop/
 #append fc for adding element : https://www.w3schools.com/python/ref_list_append.asp
 # you can create code using switch match, which would be more souitable for this position -> syntax of match : https://www.tabnine.com/blog/the-essential-guide-to-python-switch-statements/
+
 # user input: https://www.w3schools.com/python/python_user_input.asp
 #key strokes : https://pyautogui.readthedocs.io/en/latest/keyboard.html
 # TODO 2 - print saved 'mousePositions' into using python output libraries'data.txt';
@@ -13,29 +14,41 @@
 # -> also provide error if user creates something wrong
 #cmd:  'Would you like to 'create' new or 'load' old data? Press 'c' or 'l''
 import pyautogui as pt
+userDecider=" "
+userInput = ' '
+
+
+def keyRealizator(key):
+    print("key: ",key)
+    if key=="m":
+        print("Data added: '%d'",pt.position()) 
+        userData.append(pt.position())
+    elif key == 'd':
+        if userData!=[]:
+            userData.pop()
+
+        print("deleted one thing",userData.pop())
+    else:
+        print("Wrong key try 'm' or 'd'")
+    
+
 userDecider = input("Would you like to 'create' new or 'load' old data? Press 'c' or 'l'")
 
 if userDecider=='c':
+    iterator = 0
+    userData = []
     print("Press 'm' for adding curent mouse position, press 'd' for deleting previous mouse position")
     while(userInput!='x'):
-        userData = []
         userInput = input("press 'm' or 'd'")
-        match userInput:
-            case 'm':
-                print("Data added: %d",pt.position())
-                userData.append(pt.position())
-            case 'd':
-                if userData!=[]:
-                    userData.pop()
-                print("deleted one thing")
-            default:
-                print("Wrong key try 'm' or 'd'");
-
-        file = ('data.txt','w')
-        file.write(userData)
-        file.close()
+        # userInput.strip(" ")
+        # print('your input: "'+userInput+'" ')
+        # iterator += 1
+        userData.append(keyRealizator(userInput))
+        
+    file = open("data.txt","w")
+    file.write(str(userData))
 elif userDecider =='l':
-    fileLoad = ("data.txt","r")
+    fileLoad = open("data.txt","r")
 
 
 else:

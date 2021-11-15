@@ -13,7 +13,7 @@ print("Screen size: ",screenSize)
 previousLocation = pt.position()    
 for i in range(200):
     
-    currentPos = pt.position()3
+    currentPos = pt.position()
     if previousLocation != currentPos:
         print("CurrentPos: ",currentPos)
         previousLocation = currentPos

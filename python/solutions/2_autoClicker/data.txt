@@ -1,0 +1,1 @@
+[Point(x=763, y=388), None, Point(x=763, y=388), None, Point(x=763, y=388), None, Point(x=763, y=388), None, None]

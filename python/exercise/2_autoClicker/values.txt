@@ -1,1 +1,1 @@
-[Point(x=849, y=540), Point(x=1064, y=836), Point(x=1313, y=93)][Point(x=479, y=503), Point(x=1919, y=606), Point(x=1743, y=525)]
+[Point(x=594, y=160), Point(x=336, y=336), Point(x=792, y=415), Point(x=792, y=415)]
